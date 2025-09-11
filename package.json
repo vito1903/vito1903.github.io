@@ -1,0 +1,23 @@
+{
+  "name": "lodronia-strichliste",
+  "homepage": "https://sebastiangrab.github.io/",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "parcel public/index.html public/logo.png --port 8080",
+    "build": "parcel build public/index.html public/logo.png --dist-dir build",
+    "start": "serve -s build --listen 8080"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.0",
+    "react-select": "^5.10.1",
+    "react-toastify": "^11.0.5",
+    "serve": "^14.2.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.8.0"
+  }
+}
