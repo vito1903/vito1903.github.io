@@ -326,7 +326,8 @@ export default function StrichlistePage() {
                 inputMode="numeric"
                 value={`${(customPriceCents / 100).toFixed(2)} €`}
                 onKeyDown={handleCustomPriceKeyDown}
-                readOnly
+                readonly
+                // placeholder="0.00 €"
                 placeholder="0.00 €"
                 disabled={submitting}
                 aria-label="Preis"
@@ -372,6 +373,7 @@ export default function StrichlistePage() {
             disabled={submitting}
           >
             {submittingConsumption ? 'speichern…' : 'Auf die Stricherlliste'}
+            {submittingConsumption ? 'speichern…' : 'Übermitteln'}
           </button>
         </div>
       </footer>
