@@ -443,3 +443,44 @@ footer {
     font-size: 1rem;
   }
 }
+
+/* ——— Custom card inputs should look like the text on normal cards ——— */
+.card .custom-title-input,
+.card .custom-price-input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font: inherit;
+  color: inherit;
+}
+
+/* Match title weight & spacing */
+.card .custom-title-input {
+  font-weight: 600;          /* same as your .title text */
+  line-height: 1.2;
+}
+
+/* Match price size/opacity of regular .price text */
+.card .custom-price-input {
+  font-size: 0.95em;         /* tweak if your .price uses another size */
+  line-height: 1.2;
+  opacity: 0.9;
+}
+
+/* Placeholder color and centering */
+.card .custom-title-input::placeholder,
+.card .custom-price-input::placeholder {
+  color: #9ca3af;            /* neutral placeholder */
+  text-align: center;
+}
+
+/* Avoid accidental focus ring shifts */
+.card .custom-title-input:focus,
+.card .custom-price-input:focus {
+  outline: none;
+  box-shadow: none;
+}
