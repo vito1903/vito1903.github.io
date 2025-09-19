@@ -20,6 +20,7 @@ export async function fetchPayments() {
 
 export async function saveOrder(order) {
   const res = await fetch(BASE, {
+    redirect: 'follow',
     method: 'POST',
     body: JSON.stringify({ action: 'saveOrder', ...order }),
     headers: { 'Content-Type': 'text/plain;charset=utf-8' }
@@ -35,6 +36,7 @@ export async function saveOrder(order) {
 
 export async function savePayment(payment) {
   const res = await fetch(BASE, {
+    redirect: 'follow',
     method: 'POST',
     body: JSON.stringify({ action: 'savePayment', ...payment }),
     headers: { 'Content-Type': 'text/plain;charset=utf-8' }
